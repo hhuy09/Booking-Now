@@ -1,0 +1,466 @@
+
+.landing-slide{
+    width: 100%;
+    height: 100%;
+}
+.partner{
+    width: 100%;
+
+}
+.row {
+    margin-right: -6px;
+    margin-left: -6px
+}
+
+.row:before,
+.row:after {
+    display: table;
+    content: " "
+}
+
+.row:after {
+    clear: both
+}
+
+.row:before,
+.row:after {
+    display: table;
+    content: " "
+}
+
+.row:after {
+    clear: both
+}
+        .img-responsive,
+        .carousel-inner>.item>img,
+        .carousel-inner>.item>a>img {
+            display: block;
+            max-width: 100%;
+            height: auto
+        }
+
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden
+}
+
+.carousel-inner>.item {
+    position: relative;
+    display: none;
+    -webkit-transition: .6s ease-in-out left;
+    transition: .6s ease-in-out left
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1
+}
+
+.carousel-inner>.active,
+.carousel-inner>.next,
+.carousel-inner>.prev {
+    display: block
+}
+
+.carousel-inner>.active {
+    left: 0
+}
+
+.carousel-inner>.next,
+.carousel-inner>.prev {
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.carousel-inner>.next {
+    left: 100%
+}
+
+.carousel-inner>.prev {
+    left: -100%
+}
+
+.carousel-inner>.next.left,
+.carousel-inner>.prev.right {
+    left: 0
+}
+
+.carousel-inner>.active.left {
+    left: -100%
+}
+
+.carousel-inner>.active.right {
+    left: 100%
+}
+
+.wapper {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    clear: both;
+    background: #fff;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 6px #dcdcdc
+}
+
+.wapper #carousel-banner .col-md-8 {
+    width: 72%
+}
+
+.wapper #carousel-banner .col-md-8 .carousel-inner .item {
+    background: #eee
+}
+
+.wapper #carousel-banner .col-md-4 {
+    width: 28%
+}
+
+
+.wapper .slide-bar .carousel-indicators {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    z-index: 15;
+    width: 100%;
+    list-style: none;
+    margin: 6px 0 0 0;
+    padding-right: 10px
+}
+
+.wapper .slide-bar .carousel-indicators li {
+    width: 100%;
+    height: 58px;
+    display: block;
+    border-radius: 0;
+    border: none;
+    margin-top: 0;
+    text-indent: initial;
+    text-align: left;
+    margin-bottom: 0
+}
+
+.wapper .slide-bar .carousel-indicators li a {
+    color: #000;
+    text-decoration: none
+}
+
+.wapper .slide-bar .carousel-indicators li a p {
+    margin: 0;
+    font-size: 13px;
+    padding: 2px 2px 0 0;
+    text-align: justify;
+    height: 36px;
+    overflow: hidden;
+    -webkit-line-clamp: 2
+}
+
+.wapper .slide-bar .carousel-indicators li a span {
+    font-size: 12px;
+    color: #676767
+}
+
+.wapper .slide-bar .carousel-indicators li figure {
+    background-position: -58px -10px;
+    width: 83px;
+    height: 46px;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 5px 10px 2px 0;
+    overflow: hidden
+}
+
+.wapper .slide-bar .carousel-indicators li.active {
+    background: #e3e3e3;
+    border: 1px solid #e3e3e3
+}
+
+.wapper .slide-bar .carousel-indicators li.active p {
+    color: #d02028
+}
+
+.wapper .wapcontent h1 {
+    font-family: Roboto-medium;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 30px
+}
+
+.wapper .wapcontent h1 span {
+    font-size: 14px;
+    color: #d02028;
+    font-family: Roboto-regular
+}
+
+.wapper .wapcontent h2 {
+    margin: 30px 0 10px 0;
+    font-weight: normal;
+    float: left;
+    width: 100%;
+    font-family: Roboto-medium;
+    height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    padding-right: 50px
+}
+
+.wapper .wapcontent h2 a {
+    text-decoration: none;
+    display: block;
+    width: auto;
+    float: left;
+    padding: 2px 6px 2px 4px;
+    font-size: 13px;
+    font-family: Roboto-regular;
+    color: #6a6a6a
+}
+
+.wapper .wapcontent h2 a:first-child {
+    font-family: Roboto-medium;
+    color: #000;
+    padding-left: 0;
+    font-size: 18px
+}
+
+.wapper .wapcontent h2 a:last-child {
+    float: right;
+    padding-right: 0;
+    color: #d02028;
+    position: absolute;
+    top: 30px;
+    right: 0
+}
+
+.wapper .wapcontent h2 a:hover {
+    color: #d02028;
+    border-bottom: 1px solid #d02028
+}
+
+.wapper .wapcontent .text-center {
+    text-align: center
+}
+
+.wapper .wapcontent .text-center .img-responsive {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%
+}
+
+.wapper .wapcontent .carousel {
+    margin-bottom: 30px
+}
+
+.wapper .wapcontent .carousel .carousel-control.left {
+    left: 0;
+    height: 50px;
+    width: 35px
+}
+
+.wapper .wapcontent .carousel .carousel-control.right {
+    right: 0;
+    height: 50px;
+    width: 35px
+}
+
+
+.wapper .wapcontent .bknow-collection .item {
+    position: relative;
+    margin-bottom: 10px
+}
+
+.wapper .wapcontent .bknow-collection .item a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    min-height: 210px;
+    background: #eee
+}
+
+.wapper .wapcontent .bknow-collection .item .wapsale {
+    width: 40px;
+    display: block;
+    position: absolute;
+    background: rgba(243, 5, 5, .78);
+    color: #fff;
+    border-radius: 50%;
+    height: 40px;
+    top: 10px;
+    right: 9px;
+    text-align: center
+}
+
+.wapper .wapcontent .bknow-collection .item .wapsale span {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 1px 0 1px;
+    display: block
+}
+
+.wapper .wapcontent .bknow-collection .item .wapsale aside {
+    font-size: 12px;
+    line-height: 18px;
+    display: none
+}
+
+.wapper .wapcontent .bknow-collection .item .wapfooter {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+    z-index: 9;
+    padding: 5px 5px 0 5px;
+    line-height: 18px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+
+.wapper .wapcontent .bknow-collection .item .wapfooter .textname {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 6px 6px 2px 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden
+}
+
+.wapper .wapcontent .bknow-collection .item .wapfooter .text-address {
+    font-size: 11px;
+    color: #d1d1d1;
+    margin: 0;
+    padding: 0 6px 0 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.wapper .wapcontent .bknow-collection .col-md-12 a {
+    color: #d02028;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0
+}
+
+.wapper .wapcontent .wapitem {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.wapper .wapcontent .wapitem .waptop {
+    position: relative;
+    display: block;
+    min-height: 210px;
+    background: #eee
+}
+
+.wapper .wapcontent .wapitem .wapfooter {
+    background: rgba(31, 31, 31, .8);
+    bottom: 103px;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    min-height: 92px;
+    color: #fff;
+    text-align: center
+}
+
+.wapper .wapcontent .wapitem .wapfooter .wapstar {
+    text-align: right;
+    border-right: 1px solid #696969
+}
+
+
+
+.wapper .wapcontent .wapitem .wapfooter i {
+    font-style: normal
+}
+
+.wapper .wapcontent .wapitem .wapfooter a {
+    display: block;
+    color: #fff;
+    padding: 12px 2px 4px 2px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 16px
+}
+
+.wapper .wapcontent .wapitem .wapfooter .text-address {
+    padding: 0 5px;
+    color: #c2c2c2;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Roboto-Regular, Arial, Helvetica, sans-serif;
+    margin: 5px 0
+}
+
+.wapper .wapcontent .wapitem .wapsale {
+    color: #d02028;
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 6px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.wapper .wapcontent .wapitem .waptag {
+    height: 20px;
+    overflow: hidden;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 4px;
+    color: #757777;
+    font-size: 12px;
+    font-family: Roboto-Medium, Arial, Helvetica, sans-serif;
+    display: block;
+    margin-bottom: 10px
+}
+
+.wapper .wapcontent .wapitem .wapbooking {
+    clear: both;
+    min-height: 40px
+}
+
+.wapper .wapcontent .wapitem .wapbooking .btn-booking {
+    padding: 8px 30px 8px 30px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+    text-decoration: none;
+    color: #757777
+}
+
+.wapper .wapcontent .wapitem .wapbooking .disabled-booking {
+    pointer-events: none;
+    cursor: no-drop;
+    background: #ebebeb !important
+}
+
+.wapper .wapcontent .wapitem .wapbooking .btn-booking:hover {
+    color: #fff;
+    background: #d02028;
+    border-color: #d02028
+}

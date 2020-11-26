@@ -4,39 +4,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Icon library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./res/css/style.css">
   <link rel="stylesheet" href="./res/css/base.css">
+  <link rel="stylesheet" href="./res/css/login-register.css">
+  <script src="./res/js/login-register.js" type="text/javascript" ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous" type="text/javascript"></script>
+  <script src="./res/js/wow.min.js"></script>
+  <script src="./res/js/scripts.js"></script>
+ 
   <title>Booking Now</title>
 
 </head>
-<body>1
+<body>
   <div class="header">
-    <nav class="navbar fixed-top navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img id="logo" src="./res/img/booking_now_80x80.png" alt="logo">
+    <nav class="navbar fixed-top  bg-transparent py-0">
+      <a class="navbar-brand py-0" href="#">
+        <img class = "img-fluid" id="logo" src="./res/img/booking_now_200x200.png" width="50" height="50" loading="lazyload" alt="logo">
       </a>
-      <form class="form-inline my-2 my-lg-0">
+      <form class="form-inline my-2 my-lg-0 py-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Start your search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          <img src="./res/icons/icons-1.1.0/icons/search.svg" alt="search">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+          </svg>
         </button>
       </form>
 
       <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">Drop
+        <button class="btn  btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+            <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+          </svg>
           <span class="caret"></span>
         </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a href="#"> Đăng nhập</a>
-          <li> <a href="#"> Đăng kí</a></li>
-          <li class="divider"></li>
-          <li> <a href="#"> Đăng kí dịch vụ</a></li>
-          <li> <a href="#"> Liên hệ</a></li>
+        <div class="dropdown-menu bg-transparent dropdown-menu-right animate" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item btn big-register" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a>
+          <a class="dropdown-item btn big-register" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Register</a>
+          <a class="dropdown-item btn big-register" href="#"> Host</a>
+          <a class="dropdown-item btn big-register" href="#"> Contact</a>
         </div>
       </div>
-
     </nav>
   </div>
   <div class="container">
@@ -91,6 +109,7 @@
           <ol class="carousel-indicators">
             <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
             <li data-target="#multi-item-example" data-slide-to="1"></li>
+            <li data-target="#multi-item-example" data-slide-to="2"></li>
           </ol>
           <!--/.Indicators-->
 
@@ -370,126 +389,163 @@
         </div>
     </section>
     </div>
-        <div class="partner">
-          <div class="container-fluid">
-            <div id="carousel-partner" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                  <img src="./res/img/backgrounds/1.jpg" class="img-fluid mx-auto d-block" alt="img1">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <img src="./res/img/backgrounds/2.jpg" class="img-fluid mx-auto d-block" alt="img2">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <img src="./res/img/backgrounds/3.jpg" class="img-fluid mx-auto d-block" alt="img3">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <img src="./res/img/backgrounds/4.jpg" class="img-fluid mx-auto d-block" alt="img4">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <img src="./res/img/backgrounds/5.jpg" class="img-fluid mx-auto d-block" alt="img5">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <img src="./res/img/backgrounds/6.jpg" class="img-fluid mx-auto d-block" alt="img6">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <img src="./res/img/backgrounds/7.jpg" class="img-fluid mx-auto d-block" alt="img7">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <img src="./res/img/backgrounds/8.jpg" class="img-fluid mx-auto d-block" alt="img8">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carousel-partner" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carousel-partner" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-        </div>
+        
         <section class="wapper">
           <div class="wapcontent">
               <div class="row">
                   <div class="col-md-12">
                       <h2>
                           <a href="#" target="_blank" rel="tag">Đối tác tuyệt vời </a>
-                          <a href="#" target="_blank" rel="tag">Xem
-                              tất cả </span></a>
+                          <a href="#" target="_blank" rel="tag">Xem tất cả </span></a>
                       </h2>
                   </div>
               </div>
-              <div id="carousel-uudaihot" class="carousel slide" data-ride="carousel" data-interval="false">
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
-                      <div class="item active">
-                          <div class="row">
-
-                            <div class="col-md-3">
-                              <div class="wapitem">
-                                  <a class="waptop"
-                                      href="#"
-                                      target="_blank">
-                                      <img src="./res/img/booking_now_200x200.png"
-                                          class="img-responsive lazyload" alt="Buzza Pizza Phan Văn Trị" />
-                                  </a>
-                                  </div>
-                                </div>
-                                  <div class="col-md-3">
-                                    <div class="wapitem">
-                                        <a class="waptop"
-                                            href="#"
-                                            target="_blank">
-                                            <img src="./res/img/booking_now_200x200.png"
-                                                class="img-responsive lazyload" alt="Buzza Pizza Phan Văn Trị" />
-                                        </a>
-                                        </div>
-                                      </div>
-                                    <div class="col-md-3">
-                                      <div class="wapitem">
-                                          <a class="waptop"
-                                              href="#"
-                                              target="_blank">
-                                              <img src="./res/img/booking_now_200x200.png"
-                                                  class="img-responsive lazyload" alt="Buzza Pizza Phan Văn Trị" />
-                                          </a>
-                                          </div>
-                                        </div>
-                                      
-                              <div class="col-md-3">
-                                <div class="wapitem">
-                                    <a class="waptop"
-                                        href="#"
-                                        target="_blank">
-                                        <img src="./res/img/booking_now_200x200.png"
-                                            class="img-responsive lazyload" alt="Buzza Pizza Phan Văn Trị" />
-                                    </a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Controls -->
-                            <a class="carousel-control" href="#carousel-uudaihot" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </a>
-                            <a class="carousel-control" href="#carousel-uudaihot" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </a>
+              <div class="partner">
+                <div class="container-fluid">
+                  <div id="carousel-partner" class="carousel slide " data-ride="carousel">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox" id="carousel-doitac">      
+                          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active " id="doitac">
+                            <img src="./res/img/booking_now_200x200.png" class="img-fluid mx-auto d-block" alt="img1">
+                          </div>
+                          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3"id="doitac">
+                            <img src="./res/img/booking_now_200x200.png" class="img-fluid mx-auto d-block" alt="img2">
+                          </div>
+                          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3"id="doitac">
+                            <img src="./res/img/booking_now_200x200.png" class="img-fluid mx-auto d-block" alt="img3">
+                          </div>
+                          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3"id="doitac">
+                            <img src="./res/img/booking_now_200x200.png" class="img-fluid mx-auto d-block" alt="img4">
+                          </div>
+                          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3"id="doitac">
+                            <img src="./res/img/booking_now_200x200.png" class="img-fluid mx-auto d-block" alt="img5">
+                          </div>
+                          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3"id="doitac">
+                            <img src="./res/img/booking_now_200x200.png" class="img-fluid mx-auto d-block" alt="img6">
+                          </div>
+                          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3"id="doitac">
+                            <img src="./res/img/booking_now_200x200.png" class="img-fluid mx-auto d-block" alt="img7">
+                          </div>
+                          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3"id="doitac">
+                            <img src="./res/img/booking_now_200x200.png" class="img-fluid mx-auto d-block" alt="img8">
+                          </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-partner" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-partner" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
       </section>
+
   </div>
   <div class="footer">
-
+    <div class="row">
+      <div class="col">
+        <div class="row">Booking Now</div>
+        <div class="row">Booking Now là Mạng lưới nhà hàng NGON, uy tín và chất lượng. Giúp thực khách đặt bàn dễ dàng, được tặng kèm ưu đãi mà không cần mua Deal, Voucher. Giải pháp đột phá mới cho câu chuyện ăn gì, ở đâu!</div>
+      </div>
+      <div class="col">
+        <div class="row">Về Booking Now</div>
+        <div class="row-cols">
+          <a class="row" href="#">Đối Tác</a>
+          <a class="row" href="#">Nhà phát triển</a>
+          <a class="row" href="#">Hướng dẫn đặt bàn</a>
+          <a class="row" href="#">Chính sách</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">Tương Tác</div>
+        <div class="row-cols">
+          <a class="row" href="#">Khiếu nại</a>
+          <a class="row" href="#">Câu hỏi thưởng gặp</a>
+          <a class="row" href="#">Dành cho nhà hàng</a>
+          <a class="row" href="#">Tin tức</a>
+          <a class="row" href="#">Liên hệ</a>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Add font awesome icons -->
+        <a href="#" class="fa fa-facebook"></a> 
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>Booking Now Copyright &copy;</p>
+      </div>
+      <div class="col">
+        
+      </div>
+    </div>
   </div>
+  <div class="modal fade login" id="loginModal">
+    <div class="modal-dialog login animated">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Login with</h4>
+            </div>
+            <div class="modal-body">
+                <div class="box">
+                    <div class="content">
+                        <div class="social"> 
+                            <a id="google_login" class="circle google" href="#">
+                                <i class="fa fa-google-plus fa-fw"></i>
+                            </a>
+                            <a id="facebook_login" class="circle facebook" href="#">
+                                <i class="fa fa-facebook fa-fw"></i>
+                            </a>
+                        </div>
+                        <div class="division">
+                            <div class="line l"></div>
+                            <span>or</span>
+                            <div class="line r"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="form loginBox">
+                            <form method="" action="" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content registerBox" style="display:none;">
+                        <div class="form">
+                            <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                                <input class="btn btn-default btn-register" type="button" value="Create account" name="commit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="forgot login-footer">
+                    <span>Looking to
+                         <a href="javascript: showRegisterForm();">create an account</a>
+                    ?</span>
+                </div>
+                <div class="forgot register-footer" style="display:none">
+                    <span>Already have an account?</span>
+                    <a href="javascript: showLoginForm();">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
 </body>
-<script src="./res/js/scripts.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="./res/js/jquery.backstretch.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 
 </html>

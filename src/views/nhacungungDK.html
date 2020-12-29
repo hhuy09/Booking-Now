@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h3>Thông tin cơ bản</h3>
+  <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="tencuahang">Tên cửa hàng:</label>
+      <div class="col-sm-4">          
+        <input type="text" class="form-control" id="tencuahang" placeholder="Nhập tên cửa hàng" name="tencuahang">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="loaihinhcuahang">Loại hình cửa hàng:</label>
+      <div class="col-sm-4">
+        <select class="form-control" id="loaihinhcuahang" name="loaihinhcuahang">
+          <option>Quán cà phê</option>
+          <option>Nhà hàng</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="diachicuahang">Địa chỉ:</label>
+      <div class="col-sm-4">          
+        <input type="text" class="form-control" id="diachicuahang" placeholder="Nhập địa chỉ cửa hàng" name="diachicuahang">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="khoanggia">Khoảng giá:</label>
+      <div class="col-sm-2">          
+        <input type="number" class="form-control" id="khoanggia" name="giadau" min="0" max="9999999" value="0">
+      </div>
+      <div class="col-sm-2">          
+        <input type="number" class="form-control" id="khoanggia" name="giacuoi" min="0" max="9999999" value="0">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="giohoatdong">Thời gian mở cửa - đóng cửa:</label>
+      <div class="col-sm-2">          
+        <input type="time" class="form-control" id="giohoatdong" name="giomocua">
+      </div>
+      <div class="col-sm-2">          
+        <input type="time" class="form-control" id="giohoatdong" name="giodongcua">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="sodienthoai">Số điện thoại:</label>
+      <div class="col-sm-4">
+        <input type="tel" class="form-control" id="sodienthoai" placeholder="0xxxxxxxxx" name="sodienthoai">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="phuhopvoi">Phù hợp với:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="phuhopvoi" placeholder="trẻ em, người lớn,..." name="phuhopvoi">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="khonggian">Không gian:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="khonggian" name="khonggian">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="mondacsac">Món đặc sắc:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="mondacsac" name="mondacsac">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="diemdactrung">Điểm đặc trưng:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="diemdactrung" name="diemdactrung">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="uudai">Ưu đãi:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="uudai" name="uudai">
+      </div>
+    </div>
+  </form>
+  <h3>Giới thiệu cửa hàng</h3>
+  <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="gioithieu">Giới thiệu:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="gioithieu" placeholder="Thông tin cửa hàng" name="gioithieu">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="hinhanh">Hình ảnh:</label>
+      <div class="col-sm-4">
+        <input type="file" class="form-control" multiple="multiple">
+      </div>
+    <br></br>
+    <br></br>
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-info" value="Submit Button">Lưu</button>
+    </div>
+    <br></br>
+    <br></br>
+  </form>
+</div>
+
+</body>
+</html>

@@ -15,25 +15,29 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous" type="text/javascript"></script>
   <script src="./res/js/wow.min.js"></script>
   <script src="./res/js/scripts.js"></script>
+  <script src="./res/js/search.js"></script>
  
   <title>Booking Now</title>
 
 </head>
 <body>
   <div class="header">
-    <nav class="navbar fixed-top  bg-transparent py-0">
+    <nav class="navbar fixed-top  bg-light py-0">
       <a class="navbar-brand py-0" href="#">
         <img class = "img-fluid" id="logo" src="./res/img/booking_now_200x200.png" width="50" height="50" loading="lazyload" alt="logo">
       </a>
-      <form class="form-inline my-2 my-lg-0 py-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Start your search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+      <div class="search-box">
+        <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+        <form action="" class="search-form">
+          <input type="text" placeholder="Search" id="search" autocomplete="off">
+        </form>
+        <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
+         xml:space="preserve">
+            <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280"/>
+            <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280"/>
           </svg>
-        </button>
-      </form>
+        <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+      </div>
 
       <div class="dropdown">
         <button class="btn  btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"

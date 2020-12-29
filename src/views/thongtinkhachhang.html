@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container col-sm-3 col-sm-offset-1">
+  <div class="list-group">
+    <a class="list-group-item text-center" data-toggle="tab"><img src="https://1.bp.blogspot.com/-A7UYXuVWb_Q/XncdHaYbcOI/AAAAAAAAZhM/hYOevjRkrJEZhcXPnfP42nL3ZMu4PvIhgCLcBGAsYHQ/s1600/Trend-Avatar-Facebook%2B%25281%2529.jpg height" height="150px" width="150px" class="img-circle text-center" alt="Cinque Terre"><a>
+    <a href="#thongtintaikhoan" class="list-group-item " data-toggle="tab"><span class="glyphicon glyphicon-user"></span> Thông tin tài khoản</a>
+    <a href="#quanlymatkhau" class="list-group-item" data-toggle="tab"><span class="glyphicon glyphicon-lock"></span> Quản lý mật khẩu</a>
+    <a href="#thoat" class="list-group-item" data-toggle="tab"><span class="glyphicon glyphicon-log-out"></span> Thoát</a>
+  </div>
+</div>
+<div class="tab-content col-sm-6 col-sm-offset-0">
+  <div id="thongtintaikhoan" class="tab-pane fade in active">
+    <form class="form-horizontal" action="/action_page.php">
+      <h3 class="text-center">THÔNG TIN TÀI KHOẢN</h3><br><br>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="ten">Tên:</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="ten" placeholder="Họ và tên" name="ten">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-8">          
+          <input type="email" class="form-control" id="email" placeholder="Địa chỉ email" name="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="ngaysinh">Ngày sinh:</label>
+        <div class="col-sm-3">
+          <input type="date" class="form-control" id="ngaysinh" name="ngay" min="1-1">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="gioitinh">Giới tính:</label>
+        <div class="col-sm-3">
+          <form>
+            <label class="radio-inline">
+              <input type="radio" id="gioitinh" name="optradio" checked>Nam
+            </label>
+            <label class="radio-inline">
+              <input type="radio" id="gioitinh" name="optradio">Nữ
+            </label>
+          </form>
+        </div>
+      </div><br><br>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary">Cập nhật</button>
+      </div><br><br>
+    </form>
+  </div>
+  <div id="quanlymatkhau" class="tab-pane fade">
+    <form class="form-horizontal" action="/action_page.php">
+      <h3 class="text-center">QUẢN LÝ MẬT KHẨU</h3><br><br>
+      <div class="form-group">
+        <label class="control-label col-sm-3" for="matkhaucu">Mật khẩu cũ:*</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="matkhaucu" placeholder="Nhập mật khẩu cũ" name="matkhaucu">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-3" for="matkhaumoi">Mật khẩu mới:*</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="matkhaumoi" placeholder="Nhập mật khẩu mới" name="matkhaumoi">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-3" for="nhaplaimatkhau">Nhập lại mật khẩu:*</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="nhaplaimatkhau" placeholder="Nhập lại mật khẩu mới" name="nhaplaimatkhau">
+        </div>
+      </div><br><br>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary">Cập nhật</button>
+      </div><br><br>
+    </form>
+  </div>
+</div>
+</body>
+</html>

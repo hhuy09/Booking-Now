@@ -1,18 +1,17 @@
-# Booking-Now
-Đồ án Nhập môn Công nghệ phần mềm
+# booking-now 0.1
 
-HK1/20-21
+Hướng dẫn cài đặt:
 
-Tên đồ án: Booking Now
++ Download và cài đặt môi trường NodeJS: https://nodejs.org/dist/v14.15.4/node-v14.15.4-x64.msi
++ Mở CMD/Power Shell hoặc Terminal, cd vào thư mục gốc của project (booking-now)
++ Gõ lệnh: npm install (để cài đặt lib cho project)
++ Gõ lệnh: npm run dev (chạy server)
++ Sau khi connect database thành công thì sử dụng trình duyệt truy cập địa chỉ: localhost:4000 để chạy website.
 
-Thực hiện bởi 5 thành viên:
+Tài khoản ADMIN:
+email: admin@bookingnow.com
+password: admin
 
-1.1712772  - Bùi Tiến Thành
-
-2.18120394 - Phạm Minh Anh Hữu
-
-3.18120397 - Nguyễn Đặng Hồng Huy
-
-4.18120401 - Mai Khánh Huyền
-
-5.18120460 - Lê Danh Lưu
+Tài khoản PROVIDER:
+email: provider@bookingnow.com
+password: provider
